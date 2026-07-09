@@ -262,7 +262,7 @@ jobs:
       matrix:
         image: [ubuntu-latest, macos-latest, windows-2022]
     steps:
-      - uses: msys2/setup-msys2@fb197b72ce45fb24f17bf3f807a388985654d1f2 # v2
+      - uses: msys2/setup-msys2@66cd2cce69caa17b53920067426061ca1de3a884 # v2
         if: ${{ contains(matrix.image, 'windows') }}
         with:
           msystem: mingw64
