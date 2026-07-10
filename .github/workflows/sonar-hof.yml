@@ -26,7 +26,9 @@ jobs:
             -DBUILD_SHARED_LIBS=OFF \
             -DBUILD_CURL_EXE=OFF \
             -DBUILD_EXAMPLES=OFF \
-            -DBUILD_TESTING=OFF
+            -DBUILD_TESTING=OFF \
+            -DCURL_USE_LIBPSL=OFF \
+            -DUSE_LIBIDN2=OFF
 
       - name: Build with Sonar build-wrapper
         run: ./build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir bw-output cmake --build build --parallel 2
