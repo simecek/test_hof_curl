@@ -64,7 +64,7 @@ jobs:
         run: perl --version | tee "$GITHUB_WORKSPACE"/perlversion
 
       - name: 'cache perl packages'
-        uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v4
         id: cache-perl-win32-pkgs
         env:
           cache-name: cache-perl-win32-pkgs
@@ -435,7 +435,7 @@ jobs:
 
       - name: 'cache perl packages'
         if: ${{ matrix.tflags != 'skipall' && matrix.tflags != 'skiprun' && matrix.sys != 'msys' }}
-        uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v4
         id: cache-perl-win32-pkgs
         env:
           cache-name: cache-perl-win32-pkgs
@@ -572,7 +572,7 @@ jobs:
             ${{ matrix.install }}
 
       - name: 'cache compiler (gcc ${{ matrix.ver }}-${{ matrix.env }})'
-        uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v4
         id: cache-compiler
         with:
           path: D:\my-cache
@@ -665,7 +665,7 @@ jobs:
 
       - name: 'cache perl packages'
         if: ${{ matrix.tflags != 'skipall' && matrix.tflags != 'skiprun' }}
-        uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v4
         id: cache-perl-win32-pkgs
         env:
           cache-name: cache-perl-win32-pkgs
@@ -1062,7 +1062,7 @@ jobs:
 
       - name: 'cache perl packages'
         if: ${{ matrix.tflags != 'skipall' && matrix.tflags != 'skiprun' }}
-        uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v4
         id: cache-perl-win32-pkgs
         env:
           cache-name: cache-perl-win32-pkgs
