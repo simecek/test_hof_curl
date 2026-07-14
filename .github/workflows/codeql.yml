@@ -58,4 +58,4 @@ jobs:
           queries: security-extended
 
       - name: 'perform analysis'
-        uses: github/codeql-action/analyze@d3678e237b9c32a6c9bffb3315c335f976f3549f # v3
+        uses: github/codeql-action/analyze@99df26d4f13ea111d4ec1a7dddef6063f76b97e9 # v3
